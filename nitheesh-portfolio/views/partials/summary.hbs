@@ -1,0 +1,16 @@
+<section id="summary" class="summary">
+  <div class="slide-number">02 · Executive Summary</div>
+  <div class="section-container">
+    <div class="summary-stats">
+      {{#each stats}}
+        <div class="stat-card hidden">
+          <div class="stat-value">{{value}}</div>
+          <div class="stat-label">{{label}}</div>
+        </div>
+      {{/each}}
+    </div>
+    <p class="summary-text">
+      {{summary}}
+    </p>
+  </div>
+</section>

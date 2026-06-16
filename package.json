@@ -1,0 +1,14 @@
+{
+  "name": "xsystems1",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "nitheesh-portfolio"
+  ],
+  "scripts": {
+    "start": "npm --prefix nitheesh-portfolio start",
+    "dev": "npm --prefix nitheesh-portfolio run dev",
+    "install:app": "npm --prefix nitheesh-portfolio install",
+    "postinstall": "npm --prefix nitheesh-portfolio install"
+  }
+}

@@ -1,0 +1,23 @@
+<section id="skills" class="skills">
+  <div class="slide-number">05 · Core Competencies</div>
+  <div class="section-container">
+    <div class="skills-grid">
+      <div class="skills-column">
+        <h3>Technical Core</h3>
+        <div class="skills-list">
+          {{#each skills.technical}}
+            <span class="skill-tag hidden">{{this}}</span>
+          {{/each}}
+        </div>
+      </div>
+      <div class="skills-column">
+        <h3>Business & Strategy</h3>
+        <div class="skills-list">
+          {{#each skills.business}}
+            <span class="skill-tag hidden">{{this}}</span>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<section id="experience" class="experience">
+  <div class="slide-number">03 · Industry Track Record</div>
+  <div class="section-container">
+    <div class="timeline">
+      {{#each experience}}
+        <div class="experience-entry hidden">
+          <div class="experience-company">{{company}}</div>
+          <div class="experience-role">{{role}}</div>
+          <div class="experience-department">{{department}}</div>
+          <div class="experience-duration">{{duration}}</div>
+          <ul class="experience-highlights">
+            {{#each highlights}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

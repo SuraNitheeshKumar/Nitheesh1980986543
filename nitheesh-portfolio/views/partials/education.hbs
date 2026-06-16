@@ -1,0 +1,22 @@
+<section id="education" class="education">
+  <div class="slide-number">04 · Academic Credentials</div>
+  <div class="section-container">
+    <div class="education-grid">
+      {{#each education}}
+        <div class="education-card hidden">
+          {{#if shortName}}
+            <div class="education-badge">Currently Enrolled</div>
+          {{/if}}
+          <div class="education-institution">{{institution}}</div>
+          <div class="education-degree">{{degree}}</div>
+          <div class="education-duration">{{duration}}</div>
+          <ul class="education-highlights">
+            {{#each highlights}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
