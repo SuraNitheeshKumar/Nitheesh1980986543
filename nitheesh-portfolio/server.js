@@ -103,8 +103,12 @@ app.get('/', (req, res) => {
   res.render('index', profileData);
 });
 
-// Start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Portfolio website running on http://localhost:${PORT}`);
-});
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Portfolio website running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
